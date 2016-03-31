@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from chichi import ChiPaiException, MeloChiChiException, NotDoingAnythingException, UnknownChiChiException, chikubi, pipi, predict_cup
+from chichi import ChiPaiException, MeloChiChiException, NotDoingAnythingException, UnknownChiChiException, chikubi, pipi, cup_predict
 import unittest
 
 
@@ -26,28 +26,28 @@ class TestChiChi(unittest.TestCase):
         self.assertEqual(pipi('マツコデラックス'), 'B140/W140/H140')
 
 
-    def test_predict_cup(self):
-        self.assertEqual(predict_cup(60, 68), 'AA')
+    def test_cup_predict(self):
+        self.assertEqual(cup_predict(60, 68), 'AA')
 
 
     def test_chipai_exception(self):
         with self.assertRaises(ChiPaiException):
-            predict_cup(50, 50)
+            cup_predict(50, 50)
 
 
     def test_melon_exception(self):
         with self.assertRaises(MeloChiChiException):
-            predict_cup(200, 200)
+            cup_predict(200, 200)
 
 
     def test_unknown_exception(self):
         with self.assertRaises(UnknownChiChiException):
-            predict_cup(100, 80)
+            cup_predict(100, 80)
 
 
     def test_unknown_exception_with_nokey(self):
         with self.assertRaises(UnknownChiChiException):
-            predict_cup(60, 200)
+            cup_predict(60, 200)
 
 
     def test_chikubi(self):

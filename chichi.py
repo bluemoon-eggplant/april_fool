@@ -69,7 +69,7 @@ def chikubi(command):
     return command2resp[command]
 
 
-def predict_cup(under, top):
+def cup_predict(under, top):
     if (under < MIN_UNDER) and (top < MIN_TOP):
         raise ChiPaiException('Is child? This is my kind of love also.')
     elif (under > MAX_UNDER) and (top > MAX_TOP):
