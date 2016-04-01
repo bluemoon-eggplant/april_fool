@@ -6,7 +6,7 @@ Pyhon3系
 
 ## インストール方法
 ```shell
-$ git clone git@github.....
+$ git clone https://github.com/bluemoon-eggplant/april_fool.git
 ```
 
 ## 使用方法
@@ -27,21 +27,25 @@ $ python
 
 そんな時chichiモジュールを使用し
 ```python
-chichi.chikubi('click')
+>>> chichi.chikubi('click')
 ```
 を実行してみましょう。
+```python
+'あ・・・もっとして・・・'
+```
 なんと、求めてきました！
 
 興奮しますね！
 
 次に
 ```python
-chichi.chikubi('kiss')
+>>> chichi.chikubi('kiss')
 ```
 を実行してみましょう。
 
-（実行結果）
-
+```python
+'んっ'
+```
 
 いい調子ですね！
 
@@ -54,22 +58,25 @@ chichi.chikubi('kiss')
 女性開発者の皆様、おまたせしました。
 
 ```python
-chichi.cup_predict(バストトップ,バストアンダー)
+>>> chichi.cup_predict(70,90)
 ```
 を実行してみましょう！（ご自分のバストトップとバストアンダーをご入力ください）
 
-（実行結果）
+```python
+'E'
+```
 
 
 ### 気になるあの芸能人のスリーサイズ・カップを調べられる機能
 
 ```python
-chichi.pipi('女優名')
+>>> chichi.pipi('マツコデラックス')
 ```
 を実行してみましょう。
 
-（実行結果マツコデラックス）
-
+```python
+'B140/W140/H140'
+```
 
 なんと、気になるあの人のスリーサイズがお手軽にわかります！
 
