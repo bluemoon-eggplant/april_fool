@@ -63,6 +63,24 @@ def pipi(actress=None):
     return __fetch_actress_cup(actress)
 
 
+def __pipi_x(i, actress=None):
+    sizes = pipi(actress)
+    size = sizes.split('/')[i][1:]
+    return int(size)
+
+
+def pipi_bust(actress=None):
+    return __pipi_x(0, actress)
+
+
+def pipi_west(actress=None):
+    return __pipi_x(1, actress)
+
+
+def pipi_hip(actress=None):
+    return __pipi_x(2, actress)
+
+
 def chikubi(command):
     if not command in command2resp:
         raise NotDoingAnythingException("It lonely if you do not do something. ChiChi are not so much afraid.")
